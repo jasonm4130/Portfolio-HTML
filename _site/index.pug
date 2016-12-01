@@ -1,0 +1,105 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title John Smith Personal Portfolio
+    link(rel='stylesheet', href='css/styles.css')
+
+  body
+    section.hero
+      .jumbotron.jumbotron-fluid
+        .container
+          .row
+            .col-xs-4
+              img(src="images/hero.png")
+            .content.col-xs-8
+              h3 I am
+              h1 John Smith
+              h4 Professional graphic designer and web developer
+              a.btn.btn-jumbotron(href="/#portfolio") View Portfolio
+      nav.navbar
+        .container
+          button.navbar-toggler.hidden-lg-up(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+            .burg
+          #navbarResponsive.collapse.navbar-toggleable-md
+            a.navbar-brand(href='#')
+              img(src="images/logo.png")
+            ul.nav.navbar-nav.float-md-right
+              li.nav-item.active
+                a.nav-link(href='#')
+                  | Home
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href='#about-me') About Me
+              li.nav-item
+                a.nav-link(href='#portfolio') Portfolio
+              li.nav-item
+                a.nav-link(href='#') Blog
+              li.nav-item
+                a.nav-link(href="#") My Services
+              li.nav-item
+                a.nav-link(href="#") Contact
+    section#about-me
+      .container
+        .row
+          .col-sm-4.img-container
+            .img
+              img(src="images/about-me.jpg")
+              .overlay
+                a.expand(href="#") +
+                a.close-overlay.hidden
+          .col-sm-8
+            .content
+              h2 About Me
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              .btn.btn-default Read More
+    section#my-skills
+      .container
+        .row
+          .header
+            h2 My Skills
+          .col-md-12.skills
+            .skillbar(data-percent='95%')
+              .skillbar-title Photoshop
+              .skillbar-percent 95%
+              .skillbar-container
+                .skillbar-bar
+                  span
+            .skillbar(data-percent='89%')
+              .skillbar-title Illustrator
+              .skillbar-percent 89%
+              .skillbar-container
+                .skillbar-bar
+                  span
+            .skillbar(data-percent='65%')
+              .skillbar-title Wordpress
+              .skillbar-percent 65%
+              .skillbar-container
+                .skillbar-bar
+                  span
+            .skillbar(data-percent='97%')
+              .skillbar-title HTML & CSS
+              .skillbar-percent 97%
+              .skillbar-container
+                .skillbar-bar
+                  span
+    section#portfolio
+      .container
+        .row
+          .header
+            h2 My Portfolio
+          .col-xs-12
+            nav.nav.nav-inline
+              a.nav-link.active(href='#') All
+              a.nav-link(href='#') Graphic Design
+              a.nav-link(href='#') Advertising
+              a.nav-link(href='#') Web design
+              a.nav-link(href="#") Logo
+              a.nav-link(href="#") Branding
+
+    script(src='js/lib/jquery-3.1.1.min.js')
+    script(src='js/lib/modernizr.js')
+    script(src='js/lib/bootstrap.min.js')
+    script(src='js/lib/mason.min.js')
+    script(src='js/main.js')

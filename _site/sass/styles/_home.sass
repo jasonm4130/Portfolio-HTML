@@ -1,0 +1,304 @@
+.jumbotron
+  background-color: #eee
+  padding: 70px 0 0
+  margin: 0
+  .row
+    align-items: center
+    img
+      width: 100%
+      height: auto
+    .content
+      font-family: 'Raleway', sans-serif
+      color: #262626
+      h3
+        font-size: 2.5rem
+      h1
+        font-weight: bold
+        margin-top: 40px
+        margin-bottom: 40px
+        font-size: 4.5rem
+      h4
+        font-weight: 200
+.btn
+  border: 1px solid #262626
+  border-radius: 0px
+  text-transform: uppercase
+  margin-top: 40px
+  font-size: .8rem
+  padding: .5rem 1.5rem
+  color: #262626
+  transition: all 0.2s ease-in-out
+  margin-bottom: 40px
+  &:hover
+    background-color: #262626
+    color: #fff
+.navbar
+  background-color: #fff
+  box-shadow: 0px 5px 5px 0px rgba(5, 5, 5, 0.2)
+  .navbar-brand img
+    max-height: 35px
+    margin: 10px
+  .navbar-nav
+    padding-top: 14px
+    li
+      text-transform: uppercase
+      font: 'Raleway', sans-serif
+      transition: all 0.2s ease-in-out
+      margin-right: 20px
+      a
+        color: #262626
+        font-size: 0.75rem
+      &:hover
+        font-weight: bold
+        a:after
+          content: ""
+          display: block
+          background: #262626
+          width: 15px
+          height: 1px
+    li.active
+      a
+        font-weight: bold
+        &:after
+          content: ""
+          display: block
+          background: #262626
+          width: 15px
+          height: 1px
+  button.navbar-toggler
+    padding: 20px 0
+    display: block
+    cursor: pointer
+    .burg
+      display: block
+      height: 3px
+      width: 30px
+      background: #262626
+      position: relative
+      transition: all 0.2s ease-in-out
+      &:before
+        content: ''
+        position: absolute
+        top: -10px
+        width: 30px
+        height: 3px
+        background: #262626
+        transition: all 0.2s ease-in-out
+        left: 0
+      &:after
+        content: ''
+        position: absolute
+        top: 10px
+        width: 30px
+        height: 3px
+        background: #262626
+        transition: all 0.2s ease-in-out
+        left: 0
+    .activeBurg
+      background: transparent
+      &:before
+        transform: rotate(45deg)
+        top: 0
+      &:after
+        transform: rotate(-45deg)
+        top: 0
+#about-me
+  @media (max-width: 576px)
+    .img-container
+      padding: 25px
+      img
+        width: 100%
+    .content
+      h2
+        &:before
+          left: 45px
+  @media (min-width: 576px)
+    .img-container
+      position: relative
+      margin-top: 185px
+      .img
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+    .content
+      margin-left: 60px
+      p
+        margin-bottom: 50px
+    .content
+      h2
+        margin-top: 100px
+        margin-bottom: 100px
+        &:before
+          left: 105px
+  .content
+    padding: 25px
+    h2
+      margin-left: 40px
+      font-weight: bold
+      text-transform: uppercase
+      letter-spacing: 4px
+      &:before
+        content: ''
+        position: absolute
+        height: 2rem
+        width: 15px
+        background: #262626
+    p
+      font-size: .9rem
+  .img-container
+    .img
+      position: relative
+      float: left
+      overflow: hidden
+      img
+        display: block
+        margin: 0
+        padding: 0
+        width: 100%
+        height: auto
+
+    .overlay
+      display: block
+      position: absolute
+      z-index: 20
+      background: rgba(0, 0, 0, 0.8)
+      overflow: hidden
+      transition: all 0.5s
+
+    a
+      &:hover
+        text-decoration: none
+      &.close-overlay
+        display: block
+        position: absolute
+        top: 0
+        right: 0
+        z-index: 100
+        width: 45px
+        height: 45px
+        font-size: 20px
+        font-weight: 700
+        color: #fff
+        line-height: 45px
+        text-align: center
+        background-color: #000
+        cursor: pointer
+        &.hidden
+          display: none
+      &.expand
+        display: block
+        position: absolute
+        z-index: 100
+        width: 60px
+        height: 60px
+        border: solid 2px #fff
+        text-align: center
+        color: #fff
+        line-height: 50px
+        font-weight: 700
+        font-size: 30px
+        border-radius: 30px
+    .overlay
+      bottom: 0
+      left: 0
+      right: 0
+      width: 100%
+      height: 0
+      a.expand
+        left: 0
+        right: 0
+        bottom: 50%
+        margin: 0 auto -30px auto
+    .img.hover .overlay
+      height: 100%
+
+#my-skills
+  background-color: #eeeeee
+  .header
+    display: inline-block
+    margin-top: 100px
+    margin-bottom: 100px
+    margin: 100px auto
+    h2
+      font-weight: bold
+      text-transform: uppercase
+      letter-spacing: 4px
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        height: 2rem
+        width: 15px
+        background: #262626
+        left: -35px
+  .skills
+    width: 100%
+    margin-bottom: 100px
+    .skillbar
+      position: relative
+      display: block
+      width: 100%
+      margin-bottom: 30px
+    .skillbar-bar
+      height: 14px
+      width: 0px
+      background: #262626
+      transition-property: width, background-color
+      span
+        height: 2.5rem
+        border-right: 1px solid #262626
+        float: right
+        margin-top: -.79rem
+    .skillbar-title
+      color: #262626
+      font-size: 1rem
+      font-weight: 600
+      text-transform: uppercase
+      display: inline-block
+      float: left
+      font-weight: bold
+      letter-spacing: 4px
+    .skillbar-percent
+      display: block
+      color: #262626
+      font-size: .8rem
+      font-weight: bold
+      text-transform: uppercase
+      margin-left: -10px
+      margin-bottom: 15px
+    .skillbar-container
+      border: 1px solid #262626
+      padding: 4px
+#portfolio
+  background-color: #fff
+  .header
+    display: inline-block
+    margin-top: 100px
+    margin-bottom: 100px
+    margin: 100px auto
+    h2
+      font-weight: bold
+      text-transform: uppercase
+      letter-spacing: 4px
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        height: 2rem
+        width: 15px
+        background: #262626
+        left: -35px
+  .col-xs-12
+    text-align: center
+    .nav
+      display: inline-block
+      border: 1px solid #262626
+      a
+        padding: 5px 25px
+        color: #262626
+        transition: all 0.2s ease-in-out
+        margin: 0
+        &:hover,
+        &.active
+          background-color: #262626
+          color: #fff
