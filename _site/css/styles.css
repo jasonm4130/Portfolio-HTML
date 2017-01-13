@@ -10455,7 +10455,8 @@ body h6 {
     max-height: 35px;
     margin: 10px; }
   .navbar .navbar-nav {
-    padding-top: 14px; }
+    padding-top: 14px;
+    margin-left: auto; }
     .navbar .navbar-nav li {
       text-transform: uppercase;
       font: 'Raleway', sans-serif;
@@ -10691,10 +10692,11 @@ body h6 {
   background-color: #fff; }
   #portfolio .header {
     display: inline-block;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin: 100px auto; }
+    margin: 0 auto;
+    text-align: center; }
     #portfolio .header h2 {
+      margin-top: 100px;
+      margin-bottom: 100px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 4px;
@@ -10705,7 +10707,7 @@ body h6 {
         height: 2rem;
         width: 15px;
         background: #262626;
-        left: -35px; }
+        margin-left: -35px; }
     #portfolio .header .nav {
       border: 1px solid #262626; }
       #portfolio .header .nav a {
