@@ -10484,7 +10484,8 @@ body h6 {
   .navbar button.navbar-toggler {
     padding: 20px 0;
     display: block;
-    cursor: pointer; }
+    cursor: pointer;
+    border: none; }
     .navbar button.navbar-toggler .burg {
       display: block;
       height: 3px;
