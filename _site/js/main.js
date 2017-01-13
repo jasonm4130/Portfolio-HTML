@@ -81,3 +81,10 @@ function onScroll(event){
         }
     });
 };
+
+// Masonry
+$('.portfolio-grid').masonry({
+  // options...
+  itemSelector: '.portfolio-item',
+  columnWidth: '.sizer'
+});

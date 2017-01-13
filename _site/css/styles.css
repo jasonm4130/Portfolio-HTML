@@ -10719,3 +10719,7 @@ body h6 {
         #portfolio .header .nav a:hover, #portfolio .header .nav a.active {
           background-color: #262626;
           color: #fff; }
+  #portfolio .portfolio-grid {
+    margin-top: 35px; }
+    #portfolio .portfolio-grid .portfolio-item {
+      margin: 15px 0; }
